@@ -11,7 +11,7 @@
 			}			
 		}
 		
-		public function getAllCoefficient():Number {
+		public function getAllCoefficients():Number {
 			return coefficients;
 		}
 
