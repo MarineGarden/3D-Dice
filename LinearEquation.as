@@ -11,8 +11,8 @@
 			}			
 		}
 		
-		public function getCoefficient(index:int):Number {
-			return coefficients[index];
+		public function getAllCoefficient():Number {
+			return coefficients;
 		}
 
 	}
