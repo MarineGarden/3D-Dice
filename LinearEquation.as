@@ -2,7 +2,7 @@
 	
 	public class LinearEquation {
 		
-		private const coefficients:Vector.<Number> = new <Number> [];
+		private var coefficients:Vector.<Number> = new <Number> [];
 
 		public function LinearEquation(...coefficients) {
 			// constructor code
@@ -11,8 +11,17 @@
 			}			
 		}
 		
+		public function substitute(newCoefficients:Vector.<Number>):LinearEquation {
+			coefficients = coefficients.concat(newCoefficients);
+			return this;
+		}
+		
 		public function getAllCoefficients():Vector.<Number> {
 			return coefficients;
+		}
+		
+		public function toString():String {
+			return coefficients.toString();
 		}
 
 	}
