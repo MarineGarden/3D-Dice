@@ -11,7 +11,7 @@
 			}			
 		}
 		
-		public function getAllCoefficients():Number {
+		public function getAllCoefficients():Vector.<Number> {
 			return coefficients;
 		}
 
