@@ -33,6 +33,16 @@
 			addChild(CYAN);
 			addChild(WHITE);
 		}
+		
+		public function changeColorPortion(red:Number, green:Number, blue:Number, yellow:Number, magenta:Number, cyan:Number, white:Number):void {
+			RED.alpha = red;
+			GREEN.alpha = green;
+			BLUE.alpha = blue;
+			YELLOW.alpha = yellow;
+			MAGENTA.alpha = magenta;
+			CYAN.alpha = cyan;
+			WHITE.alpha = white;
+		}
 
 	}
 	
