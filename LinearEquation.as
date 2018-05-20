@@ -11,8 +11,8 @@
 			}			
 		}
 		
-		public function getAllCoefficients():Vector.<Number> {
-			return coefficients;
+		public function getCoefficient(index:int):Number {
+			return coefficients[index];
 		}
 
 	}
