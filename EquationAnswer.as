@@ -18,6 +18,18 @@
 		public function getParameter(index:int):Number {
 			return answer["x" + String(index)];
 		}
+		
+		public function setParameter(index:int, value:Number):void {
+			answer["x" + String(index)] = value;
+		}
+		
+		public function toString():String {
+			var result:String = "";
+			for each(var tag:TagWithOrder in tags) {
+				result += String(answer[tag]) + ",";
+			}
+			return result.slice(0, -1);
+		}
 
 	}
 	
